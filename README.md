@@ -29,6 +29,17 @@ import numpy as np
 from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 df= pd.read_csv("/content/Mall_Customers.csv")
+```
+```
+df.head()
+```
+```
+df.info()
+```
+```
+df.isnull().sum()
+```
+```
 X = df[['Annual Income (k$)', 'Spending Score (1-100)']]
 from sklearn.cluster import KMeans
 wcss=[]
@@ -64,6 +75,12 @@ plt.legend()
 plt.title("Customer Segments")
 ```
 ## Output:
+![image](https://github.com/user-attachments/assets/af313935-69c0-471a-8ef4-ef39e2802967)
+
+![image](https://github.com/user-attachments/assets/f34a705b-0144-45d8-82c1-734a0681f829)
+
+![image](https://github.com/user-attachments/assets/70067d6c-1316-4e06-a42b-cdbcfe76a8cd)
+
 ![image](https://github.com/user-attachments/assets/58cc3aa7-167a-4af8-a178-84bacfb80e2d)
 
 ![image](https://github.com/user-attachments/assets/01a579df-de5d-458f-9483-94912ae0c1c7)
